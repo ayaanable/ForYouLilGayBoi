@@ -6,21 +6,31 @@
     <title>Happy Anniversary ❤️</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- MUSIC BUTTON + MUSIC -->
-    <button id="musicBtn">🎵 Click Me</button>
+    <!-- LOADING SCREEN -->
+    <div id="loader">
+        <div class="loader-heart"></div>
+        <p>Just a moment, love… ❤️</p>
+    </div>
+
+    <!-- FLOATING HEARTS BG -->
+    <div class="hearts-bg"></div>
+
+    <!-- MUSIC BUTTON -->
+    <button id="musicBtn">🎵 Play Music</button>
     <audio id="bgMusic" src="Perfect.mp3" loop></audio>
 
     <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Happy 2nd Anniversary, My Love ❤️</h1>
-        <p>Two years of us. Two years of magic.</p>
+    <section class="hero fade">
+        <h1>Happy 2nd Anniversary ❤️</h1>
+        <p class="typewriter">Two years of loving you… and forever to go.</p>
         <div class="heart"></div>
     </section>
 
     <!-- OUR JOURNEY -->
-    <section class="journey">
+    <section class="journey fade">
         <h2>Our Journey Together 💞</h2>
         <div class="timeline">
 
@@ -38,24 +48,24 @@
     </section>
 
     <!-- REASONS I LOVE YOU -->
-    <section class="reasons">
+    <section class="reasons fade">
         <h2>Reasons I Love You ❤️</h2>
         <div class="grid">
 
             <div class="card">Your smile makes everything better.</div>
-            <div class="card">You understand me like no one else.</div>
-            <div class="card">You make life feel lighter.</div>
-            <div class="card">You’re caring, thoughtful, and genuine.</div>
-            <div class="card">I feel at home with you.</div>
-            <div class="card">You make even ordinary days beautiful.</div>
-            <div class="card">You support my dreams without hesitation.</div>
-            <div class="card">You're the safest place I know.</div>
+            <div class="card">You understand me in a way nobody else does.</div>
+            <div class="card">You make even boring days feel warm.</div>
+            <div class="card">You’re thoughtful in the smallest ways.</div>
+            <div class="card">I feel safe and seen with you.</div>
+            <div class="card">You make me want to be better.</div>
+            <div class="card">You always choose love, even on hard days.</div>
+            <div class="card">You’re my peace, my joy, my person.</div>
 
         </div>
     </section>
 
     <!-- MINI LOVE ARTICLES -->
-    <section class="articles">
+    <section class="articles fade">
         <h2>Little Things I Want You To Know 💗</h2>
 
         <div class="article-box">
@@ -65,26 +75,35 @@
 
         <div class="article-box">
             <h3>2. I Love The Way You Care</h3>
-            <p>You don’t pretend, you don’t force it — you care naturally and genuinely. It means more than you think.</p>
+            <p>You don’t pretend or try too hard — you care naturally, without forcing it. That’s the most beautiful thing about you.</p>
         </div>
 
         <div class="article-box">
             <h3>3. You Make Me Want to Be Better</h3>
-            <p>Loving you feels like growing. You inspire me without trying. You make me want to be the best version of myself.</p>
+            <p>Loving you feels like growing. You inspire me without even trying. I become a softer, kinder person around you.</p>
         </div>
 
         <div class="article-box">
             <h3>4. Thank You for Choosing Me</h3>
-            <p>Out of everyone, you choose me — to talk to, to laugh with, to share your day with. I’m grateful for you every single day.</p>
+            <p>Out of the whole world, you choose to love me, talk to me, and share your heart with me. That means everything.</p>
         </div>
     </section>
 
+    <!-- SURPRISE SECTION -->
+    <section class="surprise-section fade">
+        <h2>Tap to Reveal a Surprise 💝</h2>
+        <button id="revealBtn">Reveal 💫</button>
+        <p id="surpriseText" class="hidden">
+            I love you more than you will ever know.  
+            You’re my home, my heart, my favorite human in the world.
+        </p>
+    </section>
+
     <!-- FINAL MESSAGE -->
-    <section class="final">
+    <section class="final fade">
         <h2>Here’s to More Years Together ❤️</h2>
         <p>You are my favorite person.<br>Thank you for loving me the way you do.</p>
-
-        <button id="confettiBtn">Click Me 🎉</button>
+       
     </section>
 
     <script src="script.js"></script>
